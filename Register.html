@@ -1,0 +1,109 @@
+<DOCTYPE html>
+<html>
+<!--This is my own work-->
+
+<body>
+
+<body bgcolor="#E6E6FA">
+
+<head>
+<title> Register</title>
+</head>
+
+<a href="HomePage.html">Home</a>&nbsp;&nbsp;&nbsp; 
+<a href="BooksforSale.html">Books For Sale</a>&nbsp;&nbsp;&nbsp; 
+<a href="Detail.html">Detail Page</a><br/><br/>
+
+<h1 style="text-align:center"><u>Register</u></h1>
+
+<form action="http://www.WebsiteDevelopmentBook.com/FormEcho.php" method="post">
+
+<h3 style="color:#6a6ae2;">Name and Address</h3>
+
+<table cellpadding="5">
+  <tr>
+    <td><b>First Name:</b></td>
+    <td><input type="text" name="FirstName"/></td>
+    <td><b>Last Name:</b></td>
+    <td> <input type="text" name="LastName"/></td>
+  </tr>
+  <tr>
+    <td><b>Address 1:</b></td>
+    <td> <input type="text" name="Address 1"/></td>
+    <td><b>Address 2:</b></td>
+    <td><input type="text" name="Address 2"/></td>
+  </tr>
+  <tr>
+    <td><b>City:</b></td>
+    <td><input type="text" name="City"/></td>
+    <td><b>State:</b></td>
+    <td><select name="state"> 
+       <option>  </option>
+       <option value="AL">Alabama</option> 
+       <option value="AK">Alaska</option> 
+       <option value="AZ">Arizona</option> 
+       <option value="AR">Arkansas</option> 
+       <option value="CA">California</option> 
+       <option value="CO">Colorado</option> 
+       <option value="CT">Connecticut</option> 
+       <option value="De">Delaware</option> 
+       <option value="FL">Florida</option> 
+       <option value="GA" selected="selected">Georgia</option> 
+       <option value="HI">Hawaii</option> 
+       <option value="ID">Idaho</option> 
+   </select></td> 
+   <td><b>Zip Code:</b> </td>
+   <td><input type="text" name="ZipCode" maxlength="5" size="5"/></td>
+  </tr>
+</table>
+
+<br/>
+
+<h3 style="color:#6a6ae2;">Security<h3>
+
+<table cellpadding="5">
+  <tr>
+    <td><b>Password:</b></td>
+    <td><input type="text" name="Password"/></td>
+  </tr>
+  <tr>
+    <td><b>Password Hint:</b></td>
+    <td><input type="text" name="PasswordHint" value="In which city did your maternal grandparents live?" size=40 readonly/></td>
+  </tr>
+  <tr>
+    <td><b>Password Hint Answer:</b> </td>
+    <td><input type="text" name="PasswordHintAnswer"/></td>
+  </tr>
+</table>
+
+<br/>
+
+<h3 style="color:#6a6ae2;">Preferences</h3>
+
+<table cellpadding="5">
+  <tr>
+    <td><b>Book Type</b></td>
+    <td>
+    Paperback<input type="radio" name="BookType" value="paperback"/>&nbsp;&nbsp;
+    Hardback<input type="radio" name="BookType" value="hardback"/>&nbsp;&nbsp;
+    No preference<input type="radio" name="BookType" value="nopreference"/></td>
+  </tr>
+  <tr>
+    <td><b>Genre</b></td>
+    <td>
+    Fantasy <input type="checkbox" name="Fantasy"/>&nbsp;&nbsp;
+    Contemporary <input type="checkbox" name="Contemporary"/>&nbsp;&nbsp;
+    Sci-Fi <input type="checkbox" name="Sci-Fi"/>&nbsp;&nbsp;
+    Mystery <input type="checkbox" name="mystery"/></td>
+  </tr>
+  <tr>
+     <td><b>Other Preferences:</b></td>
+     <td><textarea rows="3" cols="25" wrap="soft" placeholder="Type any additional preferences you have here(ex. series vs. standalone, Young Adult vs. New Adult, etc.)...."></textarea></td>
+</table><br/>
+
+<input type="submit" value="Click to Submit"/>
+<input type="reset" value="Reset"/>
+
+</form>
+</body>
+</html>
